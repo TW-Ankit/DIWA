@@ -1,0 +1,4 @@
+fileignoreconfig:
+- filename: app/config.php
+  checksum: 5fe40db35fb53743d1694cff5382122198cc7447bb602efc9ecb9bb129e14fdb
+version: "1.0"
