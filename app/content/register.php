@@ -50,9 +50,9 @@ if('post' === strtolower($_SERVER['REQUEST_METHOD']) && isset($_POST)) {
     }
 
     // Registration Code correct?
-    if($config['site']['invitation_code'] != $_POST['invitation-code']) {
-        $errors[] = 'The Invitation Code was wrong.';
-    }
+    // if($config['site']['invitation_code'] != $_POST['invitation-code']) {
+    //     $errors[] = 'The Invitation Code was wrong.';
+    // }
 
     if(empty($errors)) {
         try {
@@ -123,12 +123,12 @@ $countryList = array('Afghanistan', 'Albania', 'Algeria', 'American Samoa', 'And
                 <input type="password" class="form-control" name="password-repeat" id="password-repeat">
             </div>
             <hr/>
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <div class="alert alert-warning">
                     <label for="invitation-code"><?php echo icon('lock'); ?> Invitation Code (4 Digits):</label>
                     <input type="password" class="form-control" name="invitation-code" id="invitation-code" maxlength="4">
                 </div>
-            </div>
+            </div> -->
             <button type="submit" class="btn btn-primary"><?php echo icon('ok'); ?> Register</button>
         </form>
         </p>
